@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Keno Game</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+  <audio src="sounds/boop_normal.wav" id="boop" preload></audio>
+  <audio src="sounds/boop_hit.wav" id="boopHit" preload></audio>
+  <div class='container'>
+    <img class='aspect' src='img/aspect.jpg'/>
+    <div class='inner'>
+      <div class="top">
+        <div class="top-container">
+          <main class="viewport">
+            <div class="board">
+            </div>
+            <div class="status">
+              <div class="statustop">
+                <ul>
+                  <li>Marked <span id="totalMarked"></span></li>
+                  <li>Coins Hit <span id="coinsHit"></span></li>
+                  <li>Multiplier<span id="multiplier"></span></li>
+                  <li>Hit <span id="totalHits"></span></li>
+                </ul>
+              </div>
+              <div class="statusbottom">
+                 <ul>
+                  <li>Bet <span id="currentBet"></span></li>
+                  <li>Win <span id="currentWinAmount"></span></li>
+                  <li>Credits <span id="creditTotal"></span></li>
+                </ul>
+              </div>
+            </div>
+          </main>
+
+          <aside class="sidebar">
+            <div class="header">
+              <br>
+              <br>
+              <img src="./img/keno.png"/>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h2>PICK NUMBERS TO START</h2>
+            </div>
+
+            <div class="payouts">
+              <table>
+                <tr>
+                  <th>Hits</th>
+                  <th>Pays</th>
+                  <th>Multiplier</th>
+                </tr>
+              </table>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <div class="bottom">
+       
+        <ul>
+          <li><a href='#' id="speed">Speed</a></li>
+          <li><a href='#' id="betMax">Bet Max</a></li>
+          <li><a href='#' id="betDown">Bet -</a></li>
+          <li><a href='#' id="betUp">Bet +</a></li>
+          <li><a href='#' id="erase">Clear Table</a></li>
+          <li><a href='#' id="start">START</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
